@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./components/Home";
+import MoviesList from "./components/MoviesList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Home />
+      <MoviesList />
     </div>
+
+    // <div className="App">
+    //   <h1> CINESCAPE </h1>
+    //   <p> New destination for pleasure in Kuwait </p>
+    //   <img
+    //     className="imgdesign "
+    //     src="https://248am.com//images/2018/08/cinescape.jpg"
+    //   />
+
+    // </div>
   );
 }
 
