@@ -27,11 +27,15 @@ const movies = [
 
 const movieslist = movies.map((movie) => {
   return (
-    // <MovieItem />
-    <div className="listdesign">
-      <h3> {movie.title} </h3>
-      <h6> {movie.genre}</h6>
-      <h6> {movie.duration}</h6>
-    </div>
+    <MovieItem
+      title={movie.title}
+      duration={movie.duration}
+      genre={movie.genre}
+    />
+    // <div className="listdesign">
+    //   <h3> {movie.title} </h3>
+    //   <h6> {movie.genre}</h6>
+    //   <h6> {movie.duration}</h6>
+    // </div>
   );
 });

@@ -1,9 +1,9 @@
-const MovieItem = (props) => {
+const MovieItem = ({ title, duration, genre }) => {
   return (
     <div className="listdesign">
-      <h3> {props.movie.title} </h3>
-      <h6> {props.movie.genre}</h6>
-      <h6> {props.movie.duration}</h6>
+      <h3> {title} </h3>
+      <h6> {genre}</h6>
+      <h6> {duration}</h6>
     </div>
   );
 };
